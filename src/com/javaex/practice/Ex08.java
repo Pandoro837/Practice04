@@ -9,7 +9,7 @@ public class Ex08 {
 		int[] iRotto = new int[6];
 		
 		iRotto[0] = (int)(Math.random()*44)+1;
-		
+
 		//중복 체크
 		for(int i = 1; i < iRotto.length; i++) {
 			iRotto[i] = (int)(Math.random()*44)+1;
@@ -18,6 +18,8 @@ public class Ex08 {
 				
 				if (iRotto[i] == iRotto[x]) {
 					iRotto[i] = (int)(Math.random()*44)+1;
+					i--;
+					
 				}
 			}
 		}
